@@ -1,0 +1,17 @@
+button{
+    margin:5px;
+}
+body{
+    background-color: beige;
+}
+#row{
+    margin-top:10px;
+}
+label{
+    color: rgb(122, 116, 116);
+}
+.random{
+    width: 20%;
+    float: left;
+    
+}
