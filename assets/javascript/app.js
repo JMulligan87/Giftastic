@@ -24,9 +24,14 @@ $(document).ready(function () {
         console.log(people);
     })
 
-    $(".buttons").on("click", function () {
+    $(document).on("click", ".buttons", function (e) {
+        if (e.target.className==="buttons") {
+            console.log("click")
+        }
+
         audioElement.play();
         var choice = $(this).attr("data-type")
+        console.log(choice);
         var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + choice + "&api_key=4P0BC1gDEzI52ZXavK4OkasG0b4E2efG&limit=10";
         $.ajax({
             url: queryURL,
