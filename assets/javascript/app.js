@@ -42,7 +42,7 @@ $(document).ready(function () {
                 for (var j = 0; j < results.length; j++) {
                     var personDiv = $("<div>").addClass("random m-1");
                     var personImage = $("<img>");
-                    personImage.attr("src", results[j].images.fixed_height.url);
+                    personImage.attr("src", results[j].images.fixed_height_still.url);
                     personImage.attr("data-still", results[j].images.fixed_height_still.url);
                     personImage.attr("data-animate", results[j].images.fixed_height.url);
                     personImage.attr("data-state", "still");
